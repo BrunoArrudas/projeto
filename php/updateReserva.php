@@ -1,5 +1,5 @@
 <?php
-require_once 'reservas.html';
+
 
 $host = "localhost";
 $usuario = "root";

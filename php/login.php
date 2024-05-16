@@ -1,6 +1,6 @@
 <?php
 
-require_once 'salas.html';
+
 
 // Verifica se os campos de email e senha estão preenchidos
 if (isset($_POST['email']) && isset($_POST['senha'])) {

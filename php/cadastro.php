@@ -1,6 +1,6 @@
 <?php
 
-require_once 'cadastro.html';
+
 
 // Verificar se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

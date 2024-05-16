@@ -1,5 +1,4 @@
 <?php
-require_once 'reservas.html';
 
 // Conexão com o banco de dados
 $host = "localhost"; // Altere para o seu host
