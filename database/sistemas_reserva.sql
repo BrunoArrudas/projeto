@@ -22,4 +22,10 @@ Email VARCHAR(50) NOT NULL,
 Senha VARCHAR(50) NOT NULL
 );
 
+SELECT * FROM reserva;
+
+INSERT INTO reserva (Id, Cursos, Ofertas, Sigla, Codigo_turma, Data_inicio, Data_fim, Subarea, Docente, Sala_lab, Capacidade) VALUES
+(3,"Tecnico", "0126542", "RH", 22, 25, 27, "Recursos Humanos", "Anderson", "3 Andar", 45);
+
+
 
