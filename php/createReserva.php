@@ -39,9 +39,8 @@ class ClasseReserva {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Conectar ao banco de dados
-    $conexao = mysqli_connect("localhost", "", "", "sistemas_reserva");
+    $conexao = mysqli_connect("localhost", "root", "", "sistemas_reserva");
 
-    // Verificar conexão
     if (mysqli_connect_errno()) {
         echo "Falha ao conectar ao MySQL: " . mysqli_connect_error();
         exit();
