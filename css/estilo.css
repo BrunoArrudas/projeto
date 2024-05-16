@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Regras gerais */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* 
+body,html {
+    width: 100%;
+    min-height: 100vh;
+} */
+
+
+/* Fim regras gerais  */
+
+
+/* Modal registro e cadastro */
+.titulo-index {
+    text-align: center;
+    margin: 10px;
+    color: #1C4A87;
+}
+
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+    backdrop-filter: blur(10px);
+    margin-top: 10px;
+    z-index: 9999;
+}
+
+.Login img {
+    width: 90px;
+    margin: 10px;
+
+}
+
+.Login figure {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    /* height: 480px; */
+    background: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.41);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: opacity 0.5s;
+    margin-top: 40px;
+}
+
+
+.modal .form-box {
+    width: 100%;
+    padding: 40px;
+    transition: .5s;
+}
+
+.modal .form-box2 {
+    width: 100%;
+    padding: 20px;
+    transition: .5s;
+
+}
+
+.modal .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #1C4A87;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #1C4A87;
+    font-weight: 600;
+    font-family: "Radio Canada";
+    text-align: center;
+    /* margin: 10px; */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #1C4A87;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #1C4A87;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    height: 10px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #1C4A87;
+    line-height: 57px;
+}
+
+.lembrar-senha {
+    font-size: .9em;
+    color: #1C4A87;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lembrar-senha label input {
+    accent-color: #3d3b3b;
+    margin: 3px;
+    padding: 4px;
+}
+
+.lembrar-senha input {
+    width: 25px;
+}
+
+.lembrar-senha a {
+    color: #1C4A87;
+    text-decoration: none;
+}
+
+.lembrar-senha a:hover {
+    text-decoration: underline;
+}
+
+.btn-popUp {
+    width: 100%;
+    height: 45px;
+    background-color: #1C4A87;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.btn-cadastro {
+    background-color: #1C4A87;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 70px;
+    border: none;
+
+}
+
+#trocalink {
+    text-decoration: none;
+}
+
+.login-registrar {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-registrar p a {
+    color: #1C4A87;
+    text-decoration: none;
+    font-weight: 600px;
+}
+
+.login-registrar p a:hover {
+    text-decoration: underline;
+}
+
+.login-registrar p {
+    margin: 10px 0;
+}
+
+.cadastro-option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro-option select {
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #F7941E;
+    height: 45px;
+}
+
+.cadastro-option option {
+    border: none;
+
+}
+
+/* Fim de modal  */
+
+/*------------------- Salas */
+
+header {
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+header img {
+
+    width: 200px;
+    height: 100px;
+    margin-left: 50px;
+
+}
+
+.topnav {
+    background-color: #1c4a87;
+}
+
+.topnav a {
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: #f7941e;
+}
+
+/* Fim menu lateral */
+.salas a:hover {
+    transform: scale(1.1);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+
+}
+
+.div-salas {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 50px;
+}
+.icone{
+    display: none;
+}
+.salas {
+    background-color: #f7941e;
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.salas a {
+    background-color: #1c4a87;
+    color: white;
+    display: block;
+    width: 60%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.salas span {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.div-filtro {
+    background-color: #FDC280;
+    line-height: 50px;
+    padding-left: 50px;
+    font-size: 1.3em;
+    border-radius: 0 0 0 10px;
+
+}
+
+.div-filtro input {
+    margin-left: 10px;
+}
+
+.div-foto {
+    background-color: white;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .div-salas {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .icone{
+        display: block;
+    }
+    .div-salas {
+        grid-template-columns: 1fr 1fr;
+    }
+    .topnav a{
+        padding: 0;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a ion-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .div-salas {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Fim salas */

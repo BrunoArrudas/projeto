@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Agenda</title>
+</head>
+
+<body>
+    <header>
+        <div class="contaner">
+            <h1>Reservas</h1>
+        </div>
+    </header>
+    <main>
+        <div class="Login">
+            <div class="modal" id="myForm">
+                <a href="index.html"><span class="icon-close"><ion-icon name="close-outline"></ion-icon></span></a>
+                <div id="form-cadastro" class="form-box">
+                    <figure>
+                        <img src="imagens/logo_senac_default.png" alt="">
+                    </figure>
+                    <h2>Cadastro</h2>
+                    <form id="form-cadastro" class="form-box2">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span><input type="text" id="nome"
+                                placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-box"><span class="icon"><ion-icon name="mail"></ion-icon></span><input
+                                type="email" id="email" placeholder="Email"></div>
+                        <div class="input-box"><span class="icon"><ion-icon name="lock-closed"></ion-icon></span><input
+                                type="password" id="senha" placeholder="Senha"></div>
+                        <div class="input-box"><span class="icon"><ion-icon
+                                    name="shield-checkmark"></ion-icon></span><input type="password" id="confirmSenha"
+                                placeholder="Confirme sua senha"></div>
+                        <div class="cadastro-option">
+                            <select name="dicipline" id="diciplina">
+                                <option value="Projetos">Projetos</option>
+                                <option value="Graficos">Graficos</option>
+                                <option value="Games">Games</option>
+                                <option value="Programação">Programação</option>
+                                <option value="Web">Web</option>
+                            </select>
+                            <button class="btn-cadastro" id="btn-cadastro" >Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

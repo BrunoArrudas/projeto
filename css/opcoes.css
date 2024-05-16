@@ -1,0 +1,38 @@
+
+.div-img{
+        height: 90px;
+        
+     }
+     .div-img img {
+        width: 100%;
+     }
+
+   
+input {
+    background-color: orange;
+    color: white;
+    height: 100px;
+    width: 170px;
+    border-radius: 1px;
+    gap: 20px;
+    border: none;
+    font-size: 30px;
+    
+
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 434px;
+    margin-top: 40px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+
+}
